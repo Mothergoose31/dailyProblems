@@ -13,40 +13,31 @@
 // NOT WORKING AS EXPECTED 
 //The Splice was messing it up, every splice would change the index
 
-
 // function stringPermutator(str) {
-//     var factorial = [1] 
-//     var permutations = [];
-//     for (var i = 1; i <= str.length; i++) 
+//   var factorial = [1], permutations = [];
+//   for (var i = 1; i <= str.length; i++) 
 //       factorial[i] = i * factorial[i - 1];
 //     for (var i = 0; i < factorial[str.length]; i++) {
-//         var permutation = "", temp = str, code = i;
+//       var perm = "", temp = str, code = i;
 //         for (var pos = str.length; pos > 0; pos--) {
-//             var sel = code / factorial[pos - 1];
-//             permutation += temp.charAt(sel);
-//             code = code % factorial[pos - 1];
-//             temp = temp.substring(0, sel) + temp.substring(sel + 1);
+//           var sel = code / factorial[pos - 1];
+//           perm += temp.charAt(sel);
+//           code = code % factorial[pos - 1];
+//           temp = temp.substring(0, sel) + temp.substring(sel + 1);
 //         }
-//         permutations.push(permutation);
+//         permutations.push(perm);
+//       }
+//       permutations.forEach(e => {
+//         for(  var i = 0 ; i < e.length; i++){
+//           if (e[i] === e[i+1]){
+//             console.log(i.length)
+//             permutations.splice(i,1); 
+//           }
+//          }
+//       })
+//       console.log(permutations)
+//      return permutations.length
 //     }
-//     return test(permutations)
-//     }
-
-// stringPermutator("aaabb");
-// function test(arr){
-//     let result = []
-//     for(i = 0 ; i < arr.length; i++){
-//         let word = arr[i];
-//         result.push(word)
-//         for(j = 0 ; j < word.length; j++){
-//             if( word[j] === word[j+1]){
-//             result.pop(word)
-//             break
-//             }
-//         }
-//     }
-//     return result.length
-// }
 // stringPermutator("aaabb");
 
 
